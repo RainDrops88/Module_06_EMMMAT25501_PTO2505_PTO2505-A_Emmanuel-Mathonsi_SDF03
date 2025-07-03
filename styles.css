@@ -16,8 +16,66 @@ body {
     background-color: #fafafa;
     color: #262626;
     padding-bottom: 3rem;
-}
+    justify-items: center;
+}s
 
 img {
-    display: block;
+    border: 5px solid darkolivegreen;
+    
+}
+
+.btn-profile-edit-btn {
+    width: 100px;
+    height: 20px;
+    padding-left: 10px 5px 10px 5px
+    
+
+}
+
+.btn-profile-settings-btn {
+    width: 20px;
+    height: 20px;
+    border-radius: 540px;
+}
+
+
+.profile {
+    display: inline-flex;
+    justify-content: center;
+    
+}
+
+.profile-image {
+    border: 10px solid rgb(5, 49, 12);
+    border-radius: 250px;
+}
+.profile-user-settings {
+    display: flex;
+    margin-top: 30px;
+
+}
+
+ul {
+    list-style: none;
+    display: flex;
+    padding: 40px;
+}
+
+.profile-bio {
+    margin-bottom: 50px;
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: 150px 150px 150px ;
+    grid-template-rows: 300px 200px  200px 200px;
+    padding: 20px;
+    column-gap: 10px;
+    row-gap: 10px;
+    
+}
+
+.gallery-image {
+    width: 150px;
+    height: 300px;
 }
