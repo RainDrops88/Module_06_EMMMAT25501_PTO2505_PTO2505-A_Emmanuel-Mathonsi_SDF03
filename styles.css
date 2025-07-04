@@ -31,18 +31,20 @@ img {
 }
 
 .btn-profile-edit-btn {
-    width: 100px;
-    height: 20px;
+    font-size: 12;
+    margin-bottom: 15px;
+    margin-left: 30px;
     padding-left: 10px 5px 10px 5px
     
 
 }
 
 .btn-profile-settings-btn {
-    width: 30px;
-    height: 30px;
-    border-radius: 540px;
-    border-color: #fafafa;
+    padding: 1px;
+    margin-bottom:15px;
+    margin-left: 10px;
+    
+   
 }
 
 
@@ -63,46 +65,61 @@ img {
 }
 
 .profile-user-name {
-    font-size: 20px;
-    margin-bottom: 130px;
+    font-size: 25px;
+    margin-left: 20px;
+    margin-bottom:25px;
     color: #939292;
 
-
 }
+
 .profile-user-settings {
     display: flex;
     align-items: center;
-    justify-content: space-around;
+    justify-content: flex-start;
 
 }
 
 .profile-stats {
-    display: flex;
-    margin-top: -250px ;
+    display: inline-block;
+    font-size: 15px;
+    margin-left: 25px;
+    margin-top: px ;
+    margin-bottom: 25px;
 
 }
 
 .profile-stat-count {
-    font-weight: 500;
+    font-weight: 600;
 }
-ul {
+
+li {
     list-style: none;
     display: inline-flex;
+    justify-content: space-between;
     margin-top:10px ;
-    padding: 40px;
+    margin-left: 5px;
+    margin-right: 5px;
+    padding: 15px;
 }
 
 .profile-bio {
-    margin-bottom: 50px;
+    margin-bottom: 5px;
+    margin-left: 25px;
+    display: flex;
+    justify-content: center;
+    font-size: 15px;
+}
+
+.profile-real-name {
+    font-weight: 600;
 }
 
 .gallery {
     display: grid;
-    grid-template-columns: 150px 150px 150px ;
-    grid-template-rows: 300px 200px  200px 200px;
-    padding: 20px;
-    column-gap: 5px;
-    row-gap: 5px;
+    grid-template-columns: repeat(3, 250px);
+    grid-template-rows: 400px 300px 300px 300px;
+    column-gap: 1px;
+    row-gap: 1px;
     
 }
 
@@ -119,7 +136,22 @@ ul {
     height: 100%;
     object-fit: cover;
 }
-.kgallery-image {
-    width: 150px;
-    height: 300px;
+.gallery-item-info {
+    display: none;
+}
+
+.gallery-item-info li {
+    display: inline-block;
+    font-size: 15px;
+}
+
+.gallery-item:hover .gallery-item-info {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    justify-content: center;
+    background-color: #939292;
+    width: 100%;
+    height: 100%;
+
 }
