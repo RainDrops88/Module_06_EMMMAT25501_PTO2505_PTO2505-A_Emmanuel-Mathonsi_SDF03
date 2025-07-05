@@ -30,32 +30,15 @@ img {
     
 }
 
-.btn-profile-edit-btn {
-    font-size: 12;
-    margin-bottom: 15px;
-    margin-left: 30px;
-    padding-left: 10px 5px 10px 5px
-    
 
-}
-
-.btn-profile-settings-btn {
-    padding: 1px;
-    margin-bottom:15px;
-    margin-left: 10px;
-    
-   
-}
-
-
+/* profile section styling starts */
 .profile {
     display: flex;
     align-items: center;
-    justify-content: flex-start;
+    justify-content: center;
     flex-wrap: wrap ;
     flex-direction: inherit;
     margin-bottom: 20px;
-    
     
 }
 
@@ -77,6 +60,21 @@ img {
     align-items: center;
     justify-content: flex-start;
 
+}
+
+.btn-profile-edit-btn {
+    font-size: 12;
+    margin-bottom: 15px;
+    margin-left: 30px;
+    padding-left: 10px 5px 10px 5px
+    
+}
+
+.btn-profile-settings-btn {
+    padding: 1px;
+    margin-bottom:15px;
+    margin-left: 10px;
+    
 }
 
 .profile-stats {
@@ -113,7 +111,10 @@ li {
 .profile-real-name {
     font-weight: 600;
 }
+/* profile section styling ends */
 
+
+/* gallery section styling starts */
 .gallery {
     display: grid;
     grid-template-columns: repeat(3, 250px);
@@ -121,7 +122,6 @@ li {
     column-gap: 1px;
     row-gap: 1px;
 }
-
 
 .gallery-image {
     width: 100%;
@@ -137,7 +137,7 @@ li {
     cursor: pointer;
 }
 
-.gallery-item-info {
+.visually-hidden {
     display: none;
 }
 
@@ -156,22 +156,13 @@ li {
     opacity: 0;
 }
 
-.gallery-item-info:hover {
-    opacity: 50%;
+.gallery-item:hover .gallery-item-info {
+    opacity: 70%;
     
-
 }
+/* gallery section styling ends */
 
-.gallery-item-comments:hover {
-    display: flex;
-
-}
-
-.visually-hidden {
-    display: none;
-} 
-
-/* loader styling start section */ 
+/* loader section styling start  */ 
 
 .loader {
     width: 50px;
@@ -189,7 +180,7 @@ li {
     }
 } /* loader styling end section */
 
-/* responsive start section */
+/* responsive section styling start  */
 @media screen and (max-width: 768px) {
     .container {
         padding: 0 10px;
@@ -227,4 +218,4 @@ li {
         justify-content: center;
         margin: 0;
         width: 100%;
-    }/* responsive start section */
+    }/* responsive section styling ends */
