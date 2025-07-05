@@ -212,3 +212,11 @@ li {
     .profile-bio {
         margin: 0 auto;
     }
+
+    .gallery {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin: 0;
+        width: 100%;
+    }
